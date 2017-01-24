@@ -1,0 +1,9 @@
+<label for="{{id}}" class="am-checkbox {{attributes.class}}" style="{{attributes.style}}" ng-class="{ 'checked' : checked(), 'disabled' : disabled() }">
+	<div class="am-checkbox__box"> 
+		<div class="am-checkbox__tick" ng-show="checked()"></div> 
+	</div>
+	
+	<div class="am-input__hidden-wrapper" style="display: none;">
+		<input ng-if="springCheckbox" type="hidden" name="_{{attributes.name}}" value="on">
+	</div>
+</label>

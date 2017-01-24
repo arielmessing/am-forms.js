@@ -1,0 +1,38 @@
+
+.am-checkbox:not(.disabled) {
+	cursor: pointer;	
+}
+
+.am-checkbox__box {
+	width: 14px;
+	height: 14px;
+	background-color: #FAFCFF;
+	-webkit-box-shadow: inset 0 2px 3px rgba(91, 43, 130, .1);
+	-moz-box-shadow: inset 0 2px 3px rgba(91, 43, 130, .1);
+	box-shadow: inset 0 2px 3px rgba(91, 43, 130, .1);	
+	border: 1px solid #5B2B82;	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	display: inline-block;
+	margin-bottom: -2px;	
+}
+
+.am-checkbox.checked .am-checkbox__box {
+	background-color: #12A5DE;
+}
+
+.am-checkbox.disabled .am-checkbox__box {
+	background-color: #D5E0E5;
+	border-color: #BDBCD1;
+}
+
+.am-checkbox__tick {
+	width: 8px;
+	height: 6px;
+	background: url(../images/checkbox_tick.png);	
+	
+	margin: 0 auto;
+	margin-top: 4px;
+}
